@@ -34,6 +34,9 @@ st.subheader("This app is used to create a todo or any list for that matter")
 st.subheader("List of todos")
 st.subheader("Tick an item to have it removed immediately")
 
+st.text_input(label="Add todo", placeholder="Add new to do...",label_visibility="hidden",
+              on_change=add_to_do, key='new_todo')
+
 for index, item in enumerate(todos):
     checkbox = st.checkbox(item, key=item)
     if checkbox:
@@ -41,7 +44,3 @@ for index, item in enumerate(todos):
         functions.write_todos(todos)
         del st.session_state[item]
         st.rerun()
-
-
-st.text_input(label="Add todo", placeholder="Add new to do...",label_visibility="hidden",
-              on_change=add_to_do, key='new_todo')
