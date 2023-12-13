@@ -17,6 +17,7 @@ def add_to_do():
     todos.append(todo)
     functions.write_todos(todos)
     
+    
    
 
 # MAIN PROGRAM STARTS HERE:
