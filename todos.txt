@@ -1,2 +1,3 @@
-Go to the park
-Clean the room
+Feed the cat
+Go to Work
+Go to Gym
